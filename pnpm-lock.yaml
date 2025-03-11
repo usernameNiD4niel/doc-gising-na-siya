@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@tailwindcss/postcss':
-        specifier: ^4.0.12
-        version: 4.0.12
       postcss:
         specifier: ^8.5.3
         version: 8.5.3
@@ -26,9 +23,6 @@ importers:
       react-router-dom:
         specifier: ^7.3.0
         version: 7.3.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
-      tailwindcss:
-        specifier: ^4.0.12
-        version: 4.0.12
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.9.4
@@ -42,12 +36,18 @@ importers:
       '@rsbuild/plugin-react':
         specifier: ^1.1.1
         version: 1.1.1(@rsbuild/core@1.2.16)
+      '@tailwindcss/postcss':
+        specifier: ^4.0.12
+        version: 4.0.12
       '@types/react':
         specifier: ^19.0.10
         version: 19.0.10
       '@types/react-dom':
         specifier: ^19.0.4
         version: 19.0.4(@types/react@19.0.10)
+      tailwindcss:
+        specifier: ^4.0.12
+        version: 4.0.12
       typescript:
         specifier: ^5.8.2
         version: 5.8.2

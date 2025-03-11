@@ -1,9 +1,21 @@
 import { Fragment, useState } from "react";
+import Modal from "./Modal";
 
 function QuizPad() {
 	const [selectedTexts, setSelectedTexts] = useState<string[]>([]);
 
 	const answer = ["B", "O", "T"];
+
+	const isCorrect = () => {
+		const al = answer.length;
+		const sl = selectedTexts.length;
+		if (al !== sl) {
+			return undefined;
+		}
+		return selectedTexts.every(
+			(selectedText, index) => selectedText === answer[index],
+		);
+	};
 
 	return (
 		<div>
@@ -180,6 +192,8 @@ function QuizPad() {
 					length={answer.length}
 				/>
 			</div>
+
+			{isCorrect() && <Modal />}
 		</div>
 	);
 }

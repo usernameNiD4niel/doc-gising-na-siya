@@ -6,13 +6,4 @@ export default defineConfig({
 	output: {
 		assetPrefix: "/doc-gising-na-siya/",
 	},
-	module: {
-		rules: [
-			{
-				test: /\.css$/,
-				use: ["postcss-loader"],
-				type: "css",
-			},
-		],
-	},
 });
