@@ -8,6 +8,7 @@ function Modal() {
 	};
 
 	const onClick = () => {
+
 		console.log("executed onClick!");
 		// show other page of the question...
 		setOpen(false);
@@ -15,9 +16,8 @@ function Modal() {
 
 	return (
 		<div
-			className={`fixed z-10 top-0 right-0 left-0 bottom-0 flex items-center justify-center ${
-				!open && "hidden"
-			}`}>
+			className={`fixed z-10 top-0 right-0 left-0 bottom-0 flex items-center justify-center ${!open && "hidden"
+				}`}>
 			<div
 				className={`w-full h-screen bg-black absolute opacity-40`}
 				onClick={onClose}
@@ -34,11 +34,6 @@ function Modal() {
 					onClick={onClick}
 					className="w-full py-2 rounded-md text-center text-white bg-purple-600 mt-4 hover:bg-purple-700 cursor-pointer"
 				/>
-				{/* <button
-					className="w-full py-2 rounded-md text-center text-white bg-purple-600 mt-4"
-					onClick={() => setOpen(false)}>
-					Close
-				</button> */}
 			</dialog>
 		</div>
 	);
