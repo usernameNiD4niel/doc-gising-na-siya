@@ -4,6 +4,11 @@
     width: auto;
 }
 
+:root {
+    --primary-color: #4FB7FF;
+    --secondary-color: #CBE6F8;
+}
+
 @keyframes shake {
 
     0%,
@@ -26,4 +31,12 @@
 
 .animate-shake {
     animation: shake 0.3s ease-in-out;
+}
+
+.bg-primary {
+    background: var(--primary-color);
+}
+
+.bg-secondary {
+    background: var(--secondary-color);
 }
