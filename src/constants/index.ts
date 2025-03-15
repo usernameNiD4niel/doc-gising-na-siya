@@ -1,5 +1,21 @@
-import { profiles } from "./svg"
+import { profiles } from "./svg";
+import {
+	ER_COOR_CLASS,
+	OR_COOR_CLASS,
+	OPD_COOR_CLASS,
+	DR_OB_COOR_CLASS,
+	LAB_COOR_CLASS,
+	SW_COOR_CLASS,
+	MW_COOR_CLASS,
+} from "./maps";
 
 export {
-    profiles
-}
+	profiles,
+	ER_COOR_CLASS,
+	OR_COOR_CLASS,
+	DR_OB_COOR_CLASS,
+	OPD_COOR_CLASS,
+	LAB_COOR_CLASS,
+	SW_COOR_CLASS,
+	MW_COOR_CLASS,
+};
